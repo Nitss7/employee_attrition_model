@@ -1,0 +1,75 @@
+@font-face{
+    font-family: myFont;
+    src: url("../assets/Comfortaa/Comfortaa-VariableFont_wght.ttf");
+}
+@font-face{
+  font-family: Font2;
+  src: url("../assets/romanica/Romanica.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'myFont';
+}
+body{
+    background-image: linear-gradient(to right,#283c86 , #45a247);
+}
+@keyframes bounceIn{
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/*Navigation-CSS*/
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-items: left;
+    min-height: 90px;
+    margin-left: 20px; 
+  }
+ 
+  .btn:hover {
+    color: rgba(71, 126, 232, 0.7); /* Changes text color to a lighter shade when hovered over */
+    outline-color: rgba(71, 126, 232, 0); /* Makes the outline color transparent when hovered over */
+    outline-offset: 50px; /* Reduced increase in outline offset when hovered over */
+  }
+
+
+
+  /*Logo design 
+  animated logo */
+  
+  .logo-animation {
+    font-family: 'myFont';
+    letter-spacing: 10px;
+    stroke: rgb(235, 240, 236);
+    font-size: 85px;
+    font-weight: 700;
+    stroke-width: 3;
+    margin-left: 0; /* Remove margin-left */
+    animation: textAnimate 5s infinite alternate;
+  }
+  
+  @keyframes textAnimate {
+    0% {
+      stroke-dasharray: 0 50%;
+      stroke-dashoffset:  20%;
+      fill:rgb(0, 106, 255);
+    }
+    
+    100% {
+      stroke-dasharray: 50% 0;
+      stroke-dashoffset: -20%; /* Corrected spelling of stroke-dashoffset */
+      fill: rgb(232, 246, 233);
+    }
+  }
+  
+  
+  
